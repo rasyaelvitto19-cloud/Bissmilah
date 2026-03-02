@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EL ASYELI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <section id="contact" class="py-20 bg-[#b31312] text-white min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center w-full">
+            <div>
+                <h2 class="text-5xl font-bold mb-8">Hubungi Kami</h2>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center"><i data-lucide="mail"></i></div>
+                        <div>
+                            <p class="text-xs opacity-60 font-bold uppercase">Email Tim</p>
+                            <p class="font-semibold">rasya.elvitto19@sma.belajar.id</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center"><i data-lucide="phone"></i></div>
+                        <div>
+                            <p class="text-xs opacity-60 font-bold uppercase">Telepon</p>
+                            <p class="font-semibold">+62 895-2557-5432</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl text-slate-800 shadow-2xl">
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Pesan Anda Terkirim!');">
+                    <input type="text" placeholder="Nama" class="w-full p-4 bg-slate-50 border border-slate-100 rounded-xl focus:outline-[#b31312]">
+                    <textarea placeholder="Pesan" class="w-full p-4 bg-slate-50 border border-slate-100 rounded-xl h-32 focus:outline-[#b31312]"></textarea>
+                    <button class="w-full bg-[#b31312] text-white py-4 rounded-xl font-bold shadow-lg hover:bg-red-700 transition-all">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
